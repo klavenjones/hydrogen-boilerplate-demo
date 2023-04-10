@@ -8,6 +8,7 @@ import {getLocaleFromRequest} from '~/lib/utils';
 /**
  * Export a fetch handler in module format.
  */
+//@ts-ignore
 export default async function (request: Request): Promise {
   try {
     /**

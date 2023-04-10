@@ -33,6 +33,7 @@ export const unsign: UnsignFunction = async (cookie, secret) => {
   return valid ? value : false;
 };
 
+//@ts-ignore
 async function createKey(secret: string, usages: CryptoKey['usages']): Promise {
   const key = await crypto.subtle.importKey(
     'raw',

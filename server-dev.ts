@@ -13,6 +13,7 @@ export default {
     request: Request,
     env: Env,
     executionContext: ExecutionContext,
+    //@ts-ignore
   ): Promise {
     try {
       /**
@@ -22,6 +23,7 @@ export default {
         throw new Error('SESSION_SECRET environment variable is not set');
       }
 
+      //@ts-ignore
       const waitUntil = (p: Promise) => executionContext.waitUntil(p);
       const [cache, session] = await Promise.all([
         caches.open('hydrogen'),
