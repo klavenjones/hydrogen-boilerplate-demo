@@ -142,7 +142,7 @@ export default function Homepage() {
                 <ProductSwimlane
                   products={products.nodes}
                   title="Featured Products"
-                  count={4}
+                  count={2}
                 />
               );
             }}
